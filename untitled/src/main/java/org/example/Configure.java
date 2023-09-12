@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 @Configuration
-@ComponentScan(basePackages = "Main")
+@ComponentScan(basePackages = "org.example")
 public class Configure {
 
 //    @Bean
