@@ -14,7 +14,7 @@ public class Configure {
         return cat;
     }
 
-
+    @Bean
     Person person() {
         Person person = new Person();
         person.setName("Дмитрий");
