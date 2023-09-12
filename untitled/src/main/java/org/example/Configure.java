@@ -13,13 +13,13 @@ public class Configure {
 
         return cat;
     }
-    
+
 
     Person person() {
         Person person = new Person();
         person.setName("Дмитрий");
 
-        return person
+        return person;
     }
 
 }
