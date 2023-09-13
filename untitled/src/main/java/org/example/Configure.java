@@ -9,20 +9,22 @@ import org.springframework.stereotype.Component;
 @ComponentScan(basePackages = "org.example")
 public class Configure {
 
-//    @Bean
-//    Cat cat() {
-//        Cat cat = new Cat();
-//        cat.setName("Василий");
-//
-//        return cat;
-//    }
-//
-//    @Bean
-//    Person person() {
-//        Person person = new Person();
-//        person.setName("Дмитрий");
-//
-//        return person;
-//    }
+    @Bean
+    Cat cat() {
+        Cat cat = new Cat();
+        cat.setName("Василий");
+
+        return cat;
+    }
+
+    @Bean
+    Person person() {
+        Person person = new Person();
+        Cat cat = new Cat();
+        person.setCat(cat());
+        person.setName("Дмитрий");
+
+        return person;
+    }
 
 }
